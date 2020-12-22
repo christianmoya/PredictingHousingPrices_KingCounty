@@ -56,10 +56,11 @@ Walk score had an interesting correlation with price as well. Based on our model
 
 As expected, neighborhoods where crime rate is lower had homes with a high price range, and neighborhoods with a higher crime rate had homes that cost less. The model shows a negative correlation between price and total crime rate per capita. 
 
+![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/total_crime.png?raw=true)
+
+### Final Model
 
 ![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/Screen%20Shot%202020-12-22%20at%201.08.22%20PM.png?raw=true)
-
-![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/total_crime.png?raw=true)
 
 
 ### Recommendations 

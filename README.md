@@ -1,6 +1,6 @@
 # Multiple Linear Regression Model for King County
 
-![awesome](https://www.racialequityalliance.org/wp-content/uploads/2016/10/assessors_social-1.jpg)
+![awesome](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/Screen%20Shot%202020-12-22%20at%2012.35.15%20PM.png)
 
 ## Introduction 
 
@@ -34,19 +34,24 @@ Our original dataframe starts out with 21,597 pieces of data. We cleaned the dat
 
 ### Results
 
-We find the following features to have a strong linear relationship with price: square foootage (living, above) and building grade. 
+After building 
 
 ![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/img1.png?raw=true)
 ![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/img2.png?raw=true)
 ![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/grade.png?raw=true)
 
-Our added features seem to work out great as well. From the initial look, school rating seems to play a major role in pricing as well. Houses built around schools with higher ratings tend to cost more. 
+Our added features seem to work out great as well. From the initial look, school rating seems to play a major role in pricing as well. Schools were rated on an A-F scale. We converted that scale into a numerical figure, with an A+ represented as a 1, A as a 2, A- as a 3 and so forth. Houses built around schools with an A+ tend to cost much higher than those at an A and A-. 
 
 ![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/grade_rank.png?raw=true)
 
-### Conclusion 
+Walk score had an interesting correlation with price as well. Based on our model, we found that walk scores with a bin between 70-89, meaning "Very Walkable" were priced higher. 
 
-After multiple iterations, our final model had an R-squared value of ____. 
+![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/walk_score.png?raw=true)
+
+As expected, neighborhoods where crime rate is lower had homes with a high price range, and neighborhoods with a higher crime rate had homes that cost less. The model shows a negative correlation between price and total crime rate per capita. 
+
+
+![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/Screen%20Shot%202020-12-22%20at%201.08.22%20PM.png.png.png?raw=true)
 
 ### Recommendations 
 
@@ -54,7 +59,16 @@ Based on our model, we would make the following recommednations to first time ho
 - Buy a home near a good school
 - 
 
+
 ### Future Work 
 
-- Look into bike score and transit score for each city 
-- Calculate walk score based on address instead of zip code 
+For future work, we would do the following: 
+- Calculate the school rating for the specific school closest to the home. 
+- Include transit score and bike score from walkscore.com 
+- Specify crime rate per capita using the specific home address instead of using zip code. This may have allowed for a more normal distribution. 
+
+### Conclusion 
+
+![alt text](https://github.com/Eric-G-Romano/dsc-phase-2-project/blob/christian_branch/total_crime.png.png?raw=true)
+
+Our final model had an R-squared value of .702, an Omnibus of 271.631 and a Durbin-Watson score of 2.0. We feel confident that our final model can predict the home values, even outside of our dataset. 
